@@ -1,13 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LOKI-MDNS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="src/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDNS Tool</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <!-- Tab Container -->
+  <div class="tab-container">
+    <button class="tab active" data-target="overview">Overview</button>
+    <button class="tab" data-target="analysis">Analysis</button>
+    <button class="tab" data-target="campaigns">Campaigns</button>
+  </div>
+
+  <!-- Content Sections -->
+  <div class="content active" id="overview">
+    <h2>Overview</h2>
+    <p>Welcome to the overview section!</p>
+  </div>
+  <div class="content" id="analysis">
+    <h2>Analysis</h2>
+    <p>This is where analysis results will be shown.</p>
+  </div>
+  <div class="content" id="campaigns">
+    <h2>Campaigns</h2>
+    <p>Manage your campaigns here.</p>
+  </div>
+
+  <!-- Toggle Theme Button -->
+  <button id="toggle-theme">🌙</button>
+
+  <!-- Scripts -->
+  <script src="src/js/script.js"></script>
+</body>
 </html>
+
